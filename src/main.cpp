@@ -131,7 +131,14 @@ void autonomous(void) {
   IntakeMotor.spin(reverse);
   BeltMotor.setVelocity(100, percent);
   BeltMotor.spin(forward);
-
+  wait(500, msec);
+  RightMotor1.stop();
+  LeftMotor1.stop();
+  RightMotor2.stop();
+  LeftMotor2.stop();
+  LeftMotor3.stop();
+  RightMotor3.stop();
+  IntakeMotor.stop();
 }
 // Autonomous code (somehow works)
 
